@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-bs-theme="auto">
+  <head>
+    <!-- <script src="assets/js/color-modes.js"></script> -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>أفلام</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard-rtl/">
+
+    
+
+    
+
+<link href="assets/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/bootstrap/dashboard/dashboard.rtl.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">اسم الشركة</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="عرض/إخفاء لوحة التنقل">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="بحث" aria-label="بحث">
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <!-- تسجيل الخروج< -->
+      <a class="nav-link px-3" href="login.html">
+        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse">
+      <div class="position-sticky pt-3 sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <!-- <span data-feather="home" class="align-text-bottom"></span> -->
+              <i class="fa-solid fa-house"></i>
+              الصفحة الرئيسية
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="movies.html">
+              <i class="fa-sharp fa-solid fa-film"></i>
+              أفلام
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tvshows.html">
+              <i class="fa-solid fa-tv"></i>
+              عرض تلفزيوني
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tvchannel.html">
+              <i class="fa-solid fa-circle-dot"></i>
+              قنوات التلفاز
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mylist.html">
+              <i class="fa-solid fa-folder"></i>
+              قائمتي
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+          <span>التقارير المحفوظة</span>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              <i class="fa-solid fa-envelope"></i>
+                 اتصل بنا
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">
+              <i class="fa-solid fa-circle-question"></i>
+              التعليمات والدعم
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacy.html">
+              <i class="fa-solid fa-lock"></i>
+              سياسة الخصوصية
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="refund.html">
+              <i class="fa-solid fa-dollar-sign"></i>
+              سياسة الاسترجاع
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    
+
+<!-- contact -->
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">نموذج اتصل بنا</h1>
+    <form action="#" method="post">
+      <div class="mb-3">
+        <label for="name" class="form-label">الاسم</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">البريد الإلكتروني</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">الرسالة</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">إرسال</button>
+    </form>
+  </div>
+
+
+
+</main>
+
+
+
+      <!-- end contact -->
+
+
+
+
+    <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" integrity="sha384-gdQErvCNWvHQZj6XZM0dNsAoY4v+j5P1XDpNkcM3HJG1Yx04ecqIHk7+4VBOCHOG" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
